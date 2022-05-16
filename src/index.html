@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Starship game</title>
+	<meta name="keywords" content="animation"/>
+	<link rel="stylesheet" type="text/css" href="./style/style.css" title="starship style"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+	<div id="starship" class="animate__animated animate__backInRight">STARSHIP GAME</div>
+	<div id="dashboard">
+		<div id="stuff">
+			<div id="score">0</div>
+			<canvas id="stars" width="1000" height="400" tabindex="1">
+			</canvas>
+			<div id="control">
+				<span id="hp">
+					<span id="hp1" class="hp"><img id="imghp1" src="images/heart.png" width="48" alt="heart1"/> </span>
+					<span id="hp2" class="hp"><img id="imghp2" src="images/heart.png" width="48" alt="heart2"/> </span>
+					<span id="hp3" class="hp"><img id="imghp3" src="images/heart.png" width="48" alt="heart3"/> </span>
+				</span>
+				<button id="nouvelleSoucoupe">1 <img src="images/flyingSaucer-petit.png" width="48" alt="nouvelle soucoupe volante"/></button>
+				<button id="flotteSoucoupes">&#8734; <img src="images/flyingSaucer-petit.png" width="48" alt="nouvelle soucoupe volante"/></button>
+				<button id="addboss">BOSS<img src="images/boss.png" width="35" alt=""></button>
+				<button id="restart">RESTART</button>
+				<button id="music" value="1">MUSIC</button>
+			</div>
+		</div>
+	</div>
+	<div id="author" class="animate__animated animate__fadeInRight"> Pather Stevenson & Larafi Zakaria</div>
+	<div id="univ" class="animate__animated animate__fadeInRight">UNIVERSITY OF LILLE - JS PROJECT 2021</div>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: '8-bit-pusab';
+  src:url("./8-bit-pusab.ttf");
+}
+
+body {
+  background-image: url('../images/background.jpg');
+  font-family: '8-bit-pusab';
+  font-weight: 700px;
+  cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAAPAAAADAAAAAwAAAA8AAAAPAAAADAAAAAwAAAM8AAADPAAAA/wAAAP8AAAD/wAAA/8AAAP8AAAD/AAAA/AAAAPwAAADwAAAA8AAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////D////w////wD///8A////A////wP//zwD//88A///DA///wwP//8AD///AA///wAA//8AAP//AAP//wAD//8AD///AA///wA///8AP///AP///wD///8D////A////w////8P////P////z////8='), auto;
+}
+
+@keyframes hit{
+  0% {opacity:100%;}
+  25% {opacity:50%;}
+  75% {opacity:25%;}
+  100% {opacity:0%;}
+}
+
+#stars {
+    display : block;
+    margin:auto;
+    background-image: url("../images/ciel-nocturne.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position : 0px 0px;
+    border : 5px solid #200044;
+    border-radius:20px;
+
+}
+
+  #stars {
+    animation-duration: 30s;
+    animation-name: starsSlide;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-bottom:10px;
+  }
+
+
+@keyframes starsSlide {
+    from {
+      background-position : 1200px 0px;
+    }
+
+    to {
+     background-position : 0px 0px;
+    }
+  }
+
+div#dashboard{
+  background:grey;
+  width:1120px;
+  margin:auto;
+  margin-top:90px;
+  height:600px;
+  border:10px solid #200044;
+  border-radius: 100px;
+}
+
+div#control {
+  text-align : center;
+  margin : 10px;
+}
+
+button:hover {
+  border: outset #0BAF52 2px;
+  background: #004A20;
+  background-image: -webkit-linear-gradient(top, #004A20, #028139);
+  background-image: -moz-linear-gradient(top, #004A20, #028139);
+  background-image: -ms-linear-gradient(top, #004A20, #028139);
+  background-image: -o-linear-gradient(top, #004A20, #028139);
+  background-image: -webkit-gradient(to bottom, #004A20, #028139);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAAPAAAADAAAAAwAAAA8AAAAPAAAADAAAAAwAAAM8AAADPAAAA/wAAAP8AAAD/wAAA/8AAAP8AAAD/AAAA/AAAAPwAAADwAAAA8AAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////D////w////wD///8A////A////wP//zwD//88A///DA///wwP//8AD///AA///wAA//8AAP//AAP//wAD//8AD///AA///wA///8AP///AP///wD///8D////A////w////8P////P////z////8='), auto;
+}
+
+
+button {
+  font-size : 20px;
+  font-family: '8-bit-pusab';
+  margin : auto;
+  padding: 10px;
+  border: 4px solid #200044;
+  border-radius:20px;
+}
+
+button#addboss {
+  font-size: 30px;
+
+}
+
+button#addboss img {
+  
+  width:65px;
+  position: inherit;
+  top: 50px;
+  bottom: 0;
+}
+
+button#music {
+  position:fixed;
+  left:10px;
+  top:10px;
+} 
+
+
+button#restart {
+  font-size:30px;
+}
+
+div#score{
+  font-size : 35px;
+  color:white;
+  background:green;
+  width:250px;
+  border-radius: 20px;
+  border: 5px solid #200044;
+  text-align : center;
+  margin:auto;
+  margin-top:2px;
+  margin-bottom: 2px;
+}
+
+span#hp {
+  width : 90px;
+  padding : 4px;
+
+}
+
+img{
+  padding:2px;
+  margin-top:inherit;
+}
+
+img#imghp1,#imghp2,#imghp3 {
+  background: white;
+  border: 2px solid #200044;
+  border-radius: 13px;
+}
+
+div#starship {
+  color:green;
+  margin:5px;
+  text-align: center;
+  font-size:50px;
+  text-decoration: underline;
+}
+
+div#univ {
+  color:green;
+  margin:5px;
+  margin-top:9.3%;
+  text-align: end;
+}
+
+div#author {
+  color:green;
+  margin:5px;
+  position:fixed;
+  bottom:0;
+}
+
+div#univ {
+  color:green;
+  margin:5px;
+  text-align: end;
+  position:fixed;
+  bottom:0;
+  right:0;
+}
